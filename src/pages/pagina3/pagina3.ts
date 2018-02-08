@@ -6,12 +6,13 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'pagina3.html',
 })
 export class Pagina3Page {
-
+  mutante: any;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    console.log(navParams);
+    this.mutante = this.navParams.get('personajes');
+    console.log(this.mutante);
+    
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad Pagina3Page');
-  }
 
 }
