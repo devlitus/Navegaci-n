@@ -13,6 +13,12 @@ export class Pagina3Page {
     console.log(this.mutante);
     
   }
+  irAtras(){
+    this.navCtrl.pop()
+  }
 
+  irRoot(){
+    this.navCtrl.popToRoot();
+  }
 
 }
